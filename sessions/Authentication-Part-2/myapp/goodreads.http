@@ -1,0 +1,70 @@
+###
+POST http://localhost:3000/admin/
+Content-Type: application/json
+
+{
+    "username": "mohithi",
+    "password": "mohit@5c2"
+}
+
+###
+
+POST http://localhost:3000/loginadmin/
+Content-Type: application/json
+
+{
+    "username":"mohithi",
+    "password": "mohit@5c2"
+}
+
+
+
+
+###
+POST http://localhost:3000/addelectives/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vaGl0aGkiLCJpYXQiOjE3MDgzMjk1NzB9.8kRFh_1BVTPhmUYke3vsfBdhqbaZ03mQdF61M2CNKcc
+Content-Type: application/json 
+
+{
+    "course_code": "15",
+    "elective_name": "ml",
+    "offering": "gmr",
+    "department": "aiml",
+    "offering_strength": "60",
+    "not_allowed_students": "EEE"
+}
+
+
+
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "username":"janu",
+    "password" : "janu",
+    "regd_no": "5c2",
+    "dept":"ece",
+    "section": "C",
+    "email": "rahul@123",
+    "semister": 5
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"janu",
+    "password": "janu"
+}
+
+
+
+###
+
+GET http://localhost:3000/profiles/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1yYWh1bDEyMyIsImlhdCI6MTcwMTM5NzA5Nn0.oWiM2nSr3ZLeLtCtvMRb-zMaKt5IPqxwEeeRShMKM2U
